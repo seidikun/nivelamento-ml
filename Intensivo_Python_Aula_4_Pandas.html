@@ -64,7 +64,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'Intensivo_Python_Aula_4_Pandas';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Visualização de dados" href="Intensivo_Python_Aula_5_Visualizacao.html" />
+    <link rel="next" title="Aula 5 - Visualização de Dados" href="Intensivo_Python_Aula_5_Visualizacao.html" />
     <link rel="prev" title="Orientação a objeto" href="Intensivo_Python_Aula_3_Classe_e_Fun%C3%A7%C3%A3o.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -160,8 +160,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="Intensivo_Python_Aula_3_Classe_e_Fun%C3%A7%C3%A3o.html">Orientação a objeto</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Aula 4 - Pandas</a></li>
 
-
-<li class="toctree-l1"><a class="reference internal" href="Intensivo_Python_Aula_5_Visualizacao.html">Visualização de dados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Intensivo_Python_Aula_5_Visualizacao.html">Aula 5 - Visualização de Dados</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Nivelamento_ML_Aula_3_Intro_a_Regress%C3%A3o_Linear.html">Aula 3: Introdução a Regressão Linear</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Nivelamento_ML_Aula_4_Intro_a_Regress%C3%A3o_Log%C3%ADstica.html">Aula 4: Introdução a Regressão Logística</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Nivelamento_ML_Aula_5_%C3%81rvores.html">Aula 5 - Árvores de Decisão</a></li>
@@ -374,12 +373,9 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizacao-de-dataframes">Visualização de dataframes</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analises-estatisticas-descritivas-gerais">Análises Estatísticas Descritivas (Gerais):</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analises-estatisticas-descritivas-individuais">Análises Estatísticas Descritivas (Individuais):</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analise-e-manipulacao-de-dataframes">Análise e manipulação de dataframes</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#a-funcao-median-serve-para-calcular-visualizar-a-mediana-de-todos-os-valores-das-colunas-numericas-do-dataframe">A função “median()” serve para calcular / visualizar a mediana de todos os valores das colunas numericas do dataframe</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analise-e-manipulacao-de-dataframes">Análise e manipulação de dataframes</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#exercicio-explorando-o-formulario-de-inscricao-no-nivelamento-ada">Exercício - explorando o formulário de inscrição no nivelamento Ada</a><ul class="visible nav section-nav flex-column">
@@ -2249,12 +2245,8 @@ dtype: int64
 <ol class="arabic simple" start="5">
 <li><p>Voltando ao dataset original: Podemos calcular a mediana dos valores de todas as colunas das amostras onde na coluna “elevador” o valor é “sim”. (O apartamento possui um elevador)</p></li>
 </ol>
-</section>
-</section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="a-funcao-median-serve-para-calcular-visualizar-a-mediana-de-todos-os-valores-das-colunas-numericas-do-dataframe">
-<h1>A função “median()” serve para calcular / visualizar a mediana de todos os valores das colunas numericas do dataframe<a class="headerlink" href="#a-funcao-median-serve-para-calcular-visualizar-a-mediana-de-todos-os-valores-das-colunas-numericas-do-dataframe" title="Permalink to this heading">#</a></h1>
-<p>df_vendas[df[“elevador”] == “sim”].median()</p>
+<p>A função “median()” serve para calcular / visualizar a mediana de todos os valores das colunas numericas do dataframe
+df_vendas[df[“elevador”] == “sim”].median()</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_vendas</span><span class="p">[</span><span class="n">df_vendas</span><span class="p">[</span><span class="s2">&quot;elevador&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;sim&quot;</span><span class="p">]</span>
@@ -3079,8 +3071,9 @@ Name: quartos, dtype: float64
 </table>
 </div></div></div>
 </div>
+</section>
 <section id="analise-e-manipulacao-de-dataframes">
-<h2>Análise e manipulação de dataframes<a class="headerlink" href="#analise-e-manipulacao-de-dataframes" title="Permalink to this heading">#</a></h2>
+<h3>Análise e manipulação de dataframes<a class="headerlink" href="#analise-e-manipulacao-de-dataframes" title="Permalink to this heading">#</a></h3>
 <p>Agora que entendemos como o nosso dataframe é estruturado, podemos realizar algumas análises básicas e criar novas colunas interessantes.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -3364,6 +3357,7 @@ Name: quartos, dtype: float64
 </div>
 </section>
 </section>
+</section>
 <section class="tex2jax_ignore mathjax_ignore" id="exercicio-explorando-o-formulario-de-inscricao-no-nivelamento-ada">
 <h1>Exercício - explorando o formulário de inscrição no nivelamento Ada<a class="headerlink" href="#exercicio-explorando-o-formulario-de-inscricao-no-nivelamento-ada" title="Permalink to this heading">#</a></h1>
 <p>Vamos trabalhar com os dados de inscrição dos alunos do nivelamento. As informações sensíveis foram retiradas da tabela.</p>
@@ -3394,7 +3388,7 @@ Name: quartos, dtype: float64
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">~</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">Temp</span>\<span class="n">ipykernel_22532</span>\<span class="mf">3035408501.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">~</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">Temp</span>\<span class="n">ipykernel_16908</span>\<span class="mf">3035408501.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">df_dataset</span><span class="o">-</span><span class="n">Página1</span>
 
 <span class="ne">NameError</span>: name &#39;df_dataset&#39; is not defined
@@ -3520,7 +3514,7 @@ Name: quartos, dtype: float64
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Visualização de dados</p>
+        <p class="prev-next-title">Aula 5 - Visualização de Dados</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -3558,12 +3552,9 @@ Name: quartos, dtype: float64
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizacao-de-dataframes">Visualização de dataframes</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analises-estatisticas-descritivas-gerais">Análises Estatísticas Descritivas (Gerais):</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analises-estatisticas-descritivas-individuais">Análises Estatísticas Descritivas (Individuais):</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analise-e-manipulacao-de-dataframes">Análise e manipulação de dataframes</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#a-funcao-median-serve-para-calcular-visualizar-a-mediana-de-todos-os-valores-das-colunas-numericas-do-dataframe">A função “median()” serve para calcular / visualizar a mediana de todos os valores das colunas numericas do dataframe</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analise-e-manipulacao-de-dataframes">Análise e manipulação de dataframes</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#exercicio-explorando-o-formulario-de-inscricao-no-nivelamento-ada">Exercício - explorando o formulário de inscrição no nivelamento Ada</a><ul class="visible nav section-nav flex-column">
