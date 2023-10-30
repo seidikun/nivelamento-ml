@@ -2,8 +2,10 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: intro
+root: Intensivo_Python_Aula_0_Introdução
 chapters:
+- file: Intensivo_Python_Aula_1_Lógica_de_Programação
+- file: Intensivo_Python_Aula_2_Estruturas_e_Funções
 - file: Intensivo_Python_Aula_3_Classe_e_Função
 - file: Intensivo_Python_Aula_4_Pandas
 - file: Intensivo_Python_Aula_5_Visualizacao
